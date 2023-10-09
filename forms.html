@@ -9,14 +9,36 @@
 
 <body>
     <!-- Some input types do not have placeholders, for example: color, time, week etc... -->
+    <!-- Label and input is connected through for(label) and id(input) attribute, and they shoud be identical -->
     <h1>Forms Demo</h1>
     <form action="/tacos">
-        <input type="text" placeholder="username">
-        <input type="password" placeholder="password">
-        <input type="color">
-        <input type="number" placeholder="Enter a number">
-        <input type="time">
-        <input type="week">
+        <p>
+            <label for="username">Enter your username:</label>
+            <input id="username" type="text" placeholder="username">
+        </p>
+        <p>
+            <label for="password">Enter your password:</label>
+            <input id="password" type="password" placeholder="password">
+        </p>
+        <p>
+            <label for="color">Enter a color:</label>
+            <input id="color" type="color">
+        </p>
+        <p>
+            <label for="number">Enter a number:</label>
+            <input id="number" type="number" placeholder="Enter a number">
+        </p>
+        <p>
+            <label for="time">Enter time:</label>
+            <input id="time" type="time">
+        </p>
+        <!-- Another way to write labels and inputs, it is not very common -->
+        <p>
+            <label>
+                Enter the week:
+                <input type="week" placeholder="Enter the week">
+            </label>
+        </p>
     </form>
 
 </body>
