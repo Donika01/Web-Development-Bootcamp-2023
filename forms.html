@@ -11,6 +11,8 @@
     <!-- Some input types do not have placeholders, for example: color, time, week etc... -->
     <!-- Label and input is connected through for(label) and id(input) attribute, and they shoud be identical -->
     <h1>Forms Demo</h1>
+    <!-- The button outside of the form does not take you to the location specified in the action attribute -->
+    <button type="button">Please do not Submit the form</button>
     <form action="/tacos">
         <p>
             <label for="username">Enter your username:</label>
@@ -39,6 +41,9 @@
                 <input type="week" placeholder="Enter the week">
             </label>
         </p>
+        <button>Submit</button>
+        <!-- Another way to create a submit button -->
+        <input type="submit" value="Click Me">
     </form>
 
 </body>
