@@ -119,6 +119,24 @@
         <button>Submit</button>
     </form>
 
+    <h2>Validation Demo</h2>
+    <!-- required attribute -->
+    <form action="/dummy">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="username">Usename</label>
+            <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
+        </p>
+
+        <p>
+            <!-- The input type = "email" is a verification on it's own, because it requires a pattern -->
+            <input type="email" required>
+            <input type="url" required>
+        </p>
+        <button>Submit</button>
+    </form>
+
 
 </body>
 
