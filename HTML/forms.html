@@ -19,25 +19,28 @@
     <h1>Forms Demo</h1>
     <!-- The button outside of the form does not take you to the location specified in the action attribute -->
     <!-- Name attribute is important for the server -->
-    <h1>Hello</h1>
-    <h2>Hi</h2>
     <form action="/tacos">
         <button type="button">Please do not Submit the form</button>
         <p>
+            <!-- Autocomplete attribute by default is on, but we can switch it.
+            Autocomplete alows the browser to predict the value based on earlier typed values -->
             <label for="username">Enter your username:</label>
-            <input id="username" type="text" placeholder="username" name="username">
+            <input id="username" type="text" placeholder="username" name="username" autocomplete="off">
         </p>
         <p>
+            <!-- Disabled attribute -->
             <label for="password">Enter your password:</label>
-            <input id="password" type="password" placeholder="password" name="password">
+            <input id="password" type="password" placeholder="password" name="password" disabled>
         </p>
         <p>
             <label for="color">Enter a color:</label>
             <input id="color" type="color" name="col">
         </p>
         <p>
+            <!-- step, min, max attributes -->
             <label for="number">Enter a number:</label>
-            <input id="number" type="number" placeholder="Enter a number" name="num" min="1" max="1000" step="2">
+            <input id="number" type="number" placeholder="Enter a number" name="num" min="1" max="1000" step="2"
+                readonly>
         </p>
         <p>
             <label for="time">Enter time:</label>
@@ -66,9 +69,10 @@
         <button>Search Reddit</button>
     </form>
 
+    <!-- Autofocus attribute gives the focus to that input when we first open the page -->
     <h3>Search Google</h3>
     <form action="https://www.google.com/search">
-        <input type="text" name="q">
+        <input type="text" name="q" autofocus>
         <button>Search Google</button>
     </form>
 
@@ -136,7 +140,19 @@
         </p>
         <button>Submit</button>
     </form>
+    <h2>The List Attribute</h2>
+    <!-- list referes to <datalist> element taht contain pre-defined options for an <input> element-->
+    <form action="">
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
 
+    </form>
 
 </body>
 
