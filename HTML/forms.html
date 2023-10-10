@@ -13,8 +13,7 @@
     <!-- + Staged (git add .)
     git commit -m "mesazhi" (buttoni commit)
     sync changes - git push
-    git push Donika (ne cilin branch me i gju)
- -->
+    git push Donika (ne cilin branch me i gju)-->
     <!-- Some input types do not have placeholders, for example: color, time, week etc... -->
     <!-- Label and input are connected through for(label) and id(input) attributes, and they shoud be identical -->
     <h1>Forms Demo</h1>
@@ -38,7 +37,7 @@
         </p>
         <p>
             <label for="number">Enter a number:</label>
-            <input id="number" type="number" placeholder="Enter a number" name="num">
+            <input id="number" type="number" placeholder="Enter a number" name="num" min="1" max="1000" step="2">
         </p>
         <p>
             <label for="time">Enter time:</label>
@@ -100,12 +99,22 @@
 
         <p>
             <!-- selectet -that option is pre selected -->
-            <label for="meal">Please Select an Entree</label>
+            <label for="meal">Please Select an Entree:</label>
             <select name="meal" id="meal">
                 <option value="fish">Fish</option>
                 <option value="veg" selected>Vegetarian</option>
                 <option value="steak">Steak</option>
             </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of cheese:</label>
+            <input type="range" id="cheese" min="1" max="10" name="cheese_level" value="75">
+        </p>
+        <h3>Textarea is not an input, and it does not have a type (stand alone elements)</h3>
+        <p>
+            <label for="requests">Any special requests?</label>
+            <br>
+            <textarea id="requests" name="requests" cols="30" rows="10" placeholder="Type Something"></textarea>
         </p>
         <button>Submit</button>
     </form>
