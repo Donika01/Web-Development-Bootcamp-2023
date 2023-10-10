@@ -80,6 +80,35 @@
     </form>
 
 
+    <h2>More inputs</h2>
+    <form action="/birds">
+        <!-- We can write label before or after the input -->
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to everything</label>
+        <p>
+            <!-- radio button - we can only select one -->
+            <!-- To connect radio buttons (group them together) we have to associate them with the same name (name attribute) -->
+            <!-- value attribute is what will be sent to the server and they should be unique -->
+            <label for="xs">Extra Small:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="m">Medium:</label>
+            <input type="radio" name="size" id="m" value="m">
+            <label for="l">Large:</label>
+            <input type="radio" name="size" id="l" value="l">
+        </p>
+
+
+        <p>
+            <!-- selectet -that option is pre selected -->
+            <label for="meal">Please Select an Entree</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="veg" selected>Vegetarian</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+        <button>Submit</button>
+    </form>
 
 
 </body>
