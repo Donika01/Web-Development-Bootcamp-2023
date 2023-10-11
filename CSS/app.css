@@ -11,11 +11,14 @@
 
 /* Colors Systems */
 /* 140 different named colors available - LIMITED*/
+
 /* RGB - Red, Green, Blue Channels. Each channel ranges from 0-255*/
 /* USE COLOR PICKERS AND COLOR PALETTES*/
 
+/* HEX -Represented with hexadecimal notation */
+
 h2 {
-    color: indigo;
+    color: #81B7F2;
     background-color: rgb(255, 168, 168);
 }
 
@@ -28,4 +31,10 @@ button {
 p {
     color: olive;
     background: blueviolet;
+}
+
+/* only three digits when the pairs are the same (instead of ff, only f) (#cc55ee - #c5f)*/
+body {
+    background-color: #000;
+
 }
