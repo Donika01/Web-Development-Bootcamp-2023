@@ -11,4 +11,16 @@
 
 h2 {
     color: indigo;
+    background-color: plum;
+}
+
+button {
+    color: magenta;
+    background-color: cyan;
+}
+
+/* Background-color and background are two different properties */
+p {
+    color: olive;
+    background: blueviolet;
 }
