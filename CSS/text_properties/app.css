@@ -1,11 +1,13 @@
 /* text-decoration does a lot, mostly used to remove an underline, set an underline, or stike through */
-
+/* Absolute Units - PX - By far the most commmonly used absolute unit
+Not recomended for responsive website */
 h1 {
     text-align: center;
     font-weight: 400;
     /* font-weight: normal, bold etc...; */
     text-decoration: #456432 underline wavy;
-    letter-spacing: 10px;
+    letter-spacing: 15px;
+    font-size: 80px;
 }
 
 a {
