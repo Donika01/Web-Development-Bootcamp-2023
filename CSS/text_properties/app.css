@@ -8,6 +8,9 @@ h1 {
     text-decoration: #456432 underline wavy;
     letter-spacing: 15px;
     font-size: 80px;
+    /* Listed based on priority */
+    font-family: Segoe UI, Futura, Arial, sans-serif;
+    /* font-famili: fantasy; (fantasy is not a specific font name, but a generic family name) */
 }
 
 a {
