@@ -9,9 +9,14 @@
 /* THE <STYLE> ELEMENT - writing styles isode the <style> element. This is easy, but it makes it impossible to share styles between documents. NOT RECOMMENDED EITHER*/
 /* EXTERNAL SHEET - Write your styles in a .css file, then include th using a <link> in the head of your html document. RECOMMENDED*/
 
+/* Colors Systems */
+/* 140 different named colors available - LIMITED*/
+/* RGB - Red, Green, Blue Channels. Each channel ranges from 0-255*/
+/* USE COLOR PICKERS AND COLOR PALETTES*/
+
 h2 {
     color: indigo;
-    background-color: plum;
+    background-color: rgb(255, 168, 168);
 }
 
 button {
