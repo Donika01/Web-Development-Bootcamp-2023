@@ -109,6 +109,37 @@ a:hover {
    (3n) every third */
 /* (2n+1) - odd */
 /* Another approach is (odd) (even) */
-.post:nth-of-type(2n) {
+.post:nth-of-type(2n+1) {
     background-color: #bcb8b1;
+}
+
+/* PSEUDO ELEMENTS - Keyword added to a selector that lets you style a particular part of a selected element(s) */
+
+/* ::first-letter */
+
+h2::first-letter {
+    font-size: 50px;
+}
+
+/* ::first-line */
+
+p::first-line {
+    color: purple;
+}
+
+/* ::selection */
+
+p::selection {
+    background-color: #8f2d56;
+}
+
+/* Pseudo classes are states.
+   Pseudo elements are things or parts of an elemen we are selecting */
+
+p::after {
+    content: url(cat-snuggle.gif);
+}
+
+#maca::before {
+    content: url(today-hello.gif);
 }
