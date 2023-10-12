@@ -172,3 +172,13 @@ button:hover {
     background-color: olive;
     font-size: 10px;
 }
+
+/* !important - the most specific (an exception) */
+
+#heading {
+    color: black;
+}
+
+h1 {
+    color: pink !important;
+}
