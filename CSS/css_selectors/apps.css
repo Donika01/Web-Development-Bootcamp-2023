@@ -154,3 +154,21 @@ p::after {
 h1, h2 {
     color: #184e77;
 }
+
+/* SPECIFICITY */
+
+/* ID SELECTORS > CLASS (PSEUDO CLASS) SELECTORS > ELEMENT (PSEUDO-ELEMENT) SELECTORS*/
+
+/* Specificity Calculater */
+
+/*The background-color of the first one wins because it is more specific  */
+
+/* .post button:hover {
+    background-color: #8f2d56;
+    color: #bde0fe;
+} */
+
+button:hover {
+    background-color: olive;
+    font-size: 10px;
+}
