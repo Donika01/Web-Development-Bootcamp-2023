@@ -15,7 +15,8 @@ button {
 
 /* Selector List */
 h1, h2 {
-    color: #184e77;
+    color: yellowgreen;
+    ;
 }
 
 
@@ -136,10 +137,20 @@ p::selection {
 /* Pseudo classes are states.
    Pseudo elements are things or parts of an elemen we are selecting */
 
+/* Adding something before an element */
+
+#maca::before {
+    content: url(today-hello.gif);
+}
+
+/* Adding something after an element */
+
 p::after {
     content: url(cat-snuggle.gif);
 }
 
-#maca::before {
-    content: url(today-hello.gif);
+/* The CSS Cascade - The order your styles are declared in and linked to matters*/
+
+h1, h2 {
+    color: #184e77;
 }
