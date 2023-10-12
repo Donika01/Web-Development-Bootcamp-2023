@@ -31,7 +31,7 @@ span {
 }
 
 .tag {
-    background-color: #1c2541;
+    background-color: #8499db;
     color: #f1faee;
     font-size: 16px;
 }
@@ -40,6 +40,8 @@ span {
 
 .post a {
     color: #000;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 footer a {
@@ -70,9 +72,9 @@ input[type="password"] {
     color: red;
 }
 
-section[class="post"] {
+/* section[class="post"] {
     background-color: #9fffcb;
-}
+} */
 
 /* section.post - another way to say style the selectors that have the class post */
 
@@ -80,4 +82,33 @@ section[class="post"] {
 
 a[href*="google"] {
     color: mediumseagreen;
+}
+
+/* PSEUDO CLASSES - Keyword added to a selector that sppecifies a special state of the selected element(s) */
+
+/* :hover */
+.post button:hover {
+    background-color: #8f2d56;
+    color: #bde0fe;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* :active */
+
+.post button:active {
+    background-color: #184e77;
+}
+
+/* :checked */
+
+/* :nth-of-type() */
+/* (3) the third 
+   (3n) every third */
+/* (2n+1) - odd */
+
+.post:nth-of-type(2n) {
+    background-color: #bcb8b1;
 }
