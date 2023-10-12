@@ -33,7 +33,7 @@ p {
     background: blueviolet;
 }
 
-/* only three digits when the pairs are the same (instead of ff, only f) (#cc55ee - #c5f)*/
+/* Only three digits when the pairs are the same (instead of ff, only f) (#cc55ee - #c5f)*/
 body {
     background-color: #000;
 
