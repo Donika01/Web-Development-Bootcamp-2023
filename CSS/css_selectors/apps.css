@@ -63,3 +63,21 @@ h2 + button {
 footer > a {
     color: #343a40;
 }
+
+/* Attribute Selector - Selects all elements where the attribute is set to a value */
+
+input[type="password"] {
+    color: red;
+}
+
+section[class="post"] {
+    background-color: #9fffcb;
+}
+
+/* section.post - another way to say style the selectors that have the class post */
+
+/* the* selector next to an attribute says that the attributes with the value that cointain something */
+
+a[href*="google"] {
+    color: mediumseagreen;
+}
