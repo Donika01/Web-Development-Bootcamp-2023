@@ -1,0 +1,21 @@
+/* The elements inherit from the closest parent that does have a value */
+
+body {
+    color: purple;
+}
+
+section {
+    color: aqua;
+}
+
+/* Certain elements do not inherit things by default */
+
+form {
+    color: red;
+}
+
+/* Setting it to inherit from whatever the nearest parent is that has a color */
+/* Some properties are not inheritable */
+button, input {
+    color: inherit;
+}
