@@ -45,3 +45,21 @@ span {
 footer a {
     color: #8f2d56;
 }
+
+/* Adjacen Selector - Selects only the elemnts immediately proceded by another element */
+/* + (adjecent combinator) */
+
+input + button {
+    background-color: green;
+}
+
+h2 + button {
+    font-size: 20px;
+    background-color: magenta;
+}
+
+/* Direct Child Combinator -  Selects only the elements that are direct children of another element (one level down)*/
+
+footer > a {
+    color: #343a40;
+}
