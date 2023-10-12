@@ -1,0 +1,36 @@
+/* Universal Selector */
+/* * {
+    background-color: cyan;
+} */
+
+body {
+    background-color: #bde0fe;
+}
+
+/* Element Selector */
+button {
+    font-size: 30px;
+    background-color: #ffcfd2;
+}
+
+/* Selector List */
+h1, h2 {
+    color: #184e77;
+}
+
+/* The ID Selector */
+/* They can only be used once (it singles out one thing)*/
+#signup {
+    background-color: #cfbaf0;
+}
+
+/* Class Selector - grouping together content (they can be different elements)*/
+span {
+    color: #ff4d6d;
+}
+
+.tag {
+    background-color: #1c2541;
+    color: #f1faee;
+    font-size: 16px;
+}
