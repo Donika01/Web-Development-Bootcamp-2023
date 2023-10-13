@@ -1,0 +1,27 @@
+/* ABSOLUTE UNITS */
+/* PX - By far the most commonly used absolute unit */
+/* Not recommended for resposive webpages */
+
+/* RELATIVE UNITS */
+/* PERCENTAGES - Percentages are always relative to some other value (sometimes, the value froma parent, and other times it is a value from the element itself) */
+/* Based on the property, percentages acts differently */
+section {
+    background-color: grey;
+    width: 800px;
+    height: 800px;
+}
+
+/* width and height references the parent's width and height */
+
+div {
+    background-color: #e5989b;
+    width: 70%;
+    height: 50%;
+}
+
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    /* half of the font size */
+    line-height: 200%;
+}
