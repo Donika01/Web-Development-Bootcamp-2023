@@ -5,6 +5,7 @@
 /* RELATIVE UNITS */
 /* PERCENTAGES - Percentages are always relative to some other value (sometimes, the value froma parent, and other times it is a value from the element itself) */
 /* Based on the property, percentages acts differently */
+
 section {
     background-color: grey;
     width: 800px;
@@ -24,4 +25,33 @@ h1 {
     border: 1px solid black;
     /* half of the font size */
     line-height: 200%;
+}
+
+/* EM - With font-size, 1em equals the font-size of the parent. 2em's is twice the font-size of the parent, etc. */
+/* Things scale as the font-size changes */
+h2 {
+    /*in font-size twice as big as the parent element (article) */
+    font-size: 2em;
+    /*in margin 2em twice as big as the font-size of the element */
+    margin-left: 1em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+article {
+    font-size: 20px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
 }
