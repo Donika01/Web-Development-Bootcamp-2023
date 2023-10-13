@@ -55,3 +55,9 @@ button {
     padding: 0 1em;
     border-radius: 0.5em;
 }
+
+/* The problems with ems because they are based on parents */
+
+ul {
+    font-size: 1.5em;
+}
