@@ -67,6 +67,12 @@ footer > a {
     color: #343a40;
 }
 
+/* General Siblin Selector - Selects all the siblings of specified element */
+
+#generalsibling ~ button {
+    background-color: #8f2d56;
+}
+
 /* Attribute Selector - Selects all elements where the attribute is set to a value */
 
 input[type="password"] {
