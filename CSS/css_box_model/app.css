@@ -11,7 +11,8 @@ div {
 h1 {
     background-color: lightblue;
     width: 100px;
-
+    padding-left: 100px;
+    padding-top: 50px;
 }
 
 /* Border */
@@ -32,7 +33,7 @@ h1 {
     border-width: 3px;
     border-style: dashed;
     border-left-width: 8px;
-    box-sizing: border-box;
+    padding-right: 50px;
 }
 
 /* border: width | style | color */
@@ -43,5 +44,18 @@ h1 {
     background-color: #cdb4db;
     border: 4px solid black;
     border-left-style: dotted;
-    border-radius: 50%s;
+    border-radius: 50%;
+}
+
+/* Padding - the space between the content (the content box) and the border of an element */
+
+button {
+    /* Apply to all four sides */
+    padding: 20px;
+    /* Vertical | Horizontal */
+    padding: 10px 20px;
+    /* Top | Horizontal | Bottom */
+    padding: 10px 15px 20px;
+    /* Top | Right | Bottom | Left */
+    padding: 10px 20px 30px 40px;
 }
