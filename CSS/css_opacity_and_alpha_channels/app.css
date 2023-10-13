@@ -1,0 +1,20 @@
+/* Opacity -  0 (transparent), 1 (not at all transparent)*/
+section {
+    width: 500px;
+    height: 500px;
+    background-color: magenta;
+}
+
+#rgba {
+    width: 50%;
+    height: 50%;
+    /* Opacity with hex (the last two digits) */
+    background-color: #4e7cd765;
+}
+
+#opacity {
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    opacity: 0.3;
+}
