@@ -1,0 +1,57 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: steelblue;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+#middle {
+    background-color: #81b29a;
+}
+
+/* Position: static - it doesnt move */
+
+#static #middle {
+    position: static;
+    /* Nothing happens */
+    top: 100px;
+}
+
+/* Position: relative - top left bottom right works */
+
+#relative #middle {
+    position: relative;
+    top: 50px;
+    /* it goes to the right */
+    left: 50px;
+    /* We can use negative values and it will go the other way */
+}
+
+/* Position: absolute - the element is removed from the document flow and no space is created for the element*/
+
+#absolute {
+    position: relative;
+}
+
+#absolute #middle {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+/*Used for navbars, to stay at the top of the screen even when you scroll down  */
+
+#fixed #middle {
+    position: fixed;
+    top: 0px;
+}
+
+/* Starts out not fixded, untill it hits the top, then can get fixed */
+
+#sticky #middle {
+    position: sticky;
+    left: 400px;
+    top: 0px;
+}
