@@ -10,9 +10,10 @@ div {
 
 h1 {
     background-color: lightblue;
-    width: 100px;
+    width: 200px;
     padding-left: 100px;
     padding-top: 50px;
+    margin: 0;
 }
 
 /* Border */
@@ -25,6 +26,8 @@ h1 {
     border-style: solid;
     /* included to the div's height and width */
     box-sizing: border-box;
+    margin-left: 50px;
+    margin-bottom: 100px;
 }
 
 #two {
@@ -34,6 +37,7 @@ h1 {
     border-style: dashed;
     border-left-width: 8px;
     padding-right: 50px;
+    margin: 200px
 }
 
 /* border: width | style | color */
@@ -48,7 +52,7 @@ h1 {
 }
 
 /* Padding - the space between the content (the content box) and the border of an element */
-
+/* margin-left margin-right margin-top margin-bottom (shortcut: margin)) */
 button {
     /* Apply to all four sides */
     padding: 20px;
@@ -58,4 +62,13 @@ button {
     padding: 10px 15px 20px;
     /* Top | Right | Bottom | Left */
     padding: 10px 20px 30px 40px;
+}
+
+/* Margin - The space outside of an element border  (Between that element and something else (other elements))*/
+/* The same as padding */
+
+/* The body by default has a margin */
+
+body {
+    margin: 0;
 }
