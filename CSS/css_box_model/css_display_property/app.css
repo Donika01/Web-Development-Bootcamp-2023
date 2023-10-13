@@ -1,0 +1,35 @@
+/* Display Property */
+
+/* display: inline; Width and height are ignored. Margin and padding push elements horizontally but not vertically */
+
+span {
+    background-color: palevioletred;
+    border: 1px solid black;
+    width: 500px;
+    padding: 50px;
+    margin: 50px;
+}
+
+/* display: block; Block level elements repect width, height, margin and padding */
+
+h1 {
+    background-color: paleturquoise;
+    border: 1px solid black;
+    width: 300px;
+    height: 50px;
+    padding: 50px;
+    margin: 100px;
+    /* display-none - the element is not deletet, it is in the document, but it takes no space */
+    /* display: none; */
+}
+
+/* Inline-block  - Behaves like an inline element except width, height, margin and padding are respected */
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+    border: 3px solid black;
+    display: inline-block;
+    margin: 30px;
+}
