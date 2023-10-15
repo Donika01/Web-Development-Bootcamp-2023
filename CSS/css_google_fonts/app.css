@@ -1,0 +1,28 @@
+/* We can include a font file as part of our document */
+/* Google Fonts is free */
+/* fonts.google.com */
+
+/* Fonts pairing is gone :( */
+
+/* You only need '' if the font name has a space in it's name */
+body {
+    font-family: Roboto, sans-serif;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+h1 {
+
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 100;
+}
+
+p {
+    font-weight: 400;
+}
