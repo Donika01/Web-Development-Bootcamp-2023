@@ -1,0 +1,28 @@
+/* FLEXBOX is a tool, or a series of properties that we use to lay out items on our page in a box of content. */
+/* We have some container and we want to distribute space inside of that container. */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Flex-direction:row (left to right) | row-reverse (right to left) | column (top to bottom) | column-reverse (bottom to top) */
+/* If it width or height of the container (section) is smaller then the divs then they will shtrink */
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+}
