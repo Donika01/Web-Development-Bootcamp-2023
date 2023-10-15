@@ -23,16 +23,24 @@ h1 {
 /* space-evenly (The same amount of space) */
 /* justify-content is not horizontal or vertical, it can be either depending on flex-direction*/
 
+/* Flex-Wrap: nowrap (default) | wrap | wrap-reverse*/
+
 #container {
     background-color: #003049;
     width: 90%;
-    height: 1200px;
+    height: 500px;
     margin: 0 auto;
     border: 5px solid #003049;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    /* The main axis is top to bottom, but our cross is left to right */
+    /* flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap-reverse;
 }
+
 
 #container div {
     width: 200px;
