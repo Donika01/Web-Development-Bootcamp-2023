@@ -1,0 +1,28 @@
+/* Values for background-size */
+/* Contain - Scales the image as large as possible without cropping or stretching the image */
+/* Cover - Scales the image as large as posible without stretching the image, but will crop it */
+
+/* Background-repeat: repeat; no-repeat; repeat-x; etc. */
+
+section {
+    width: 80%;
+    height: 800px;
+    /* background-image: url(https://plus.unsplash.com/premium_photo-1687428554388-395f7f690ddb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1785&q=80);
+    background-size: cover; */
+
+    /* background-position - Whitch part of the image will be used */
+    /* background-position: bottom; center; top;*/
+
+    /* If you use background-size, it may be included immediately after background-position, seperated with the forward slash character (center/cover) */
+    /* background: center/40% no-repeat url("https://plus.unsplash.com/premium_photo-1687428554388-395f7f690ddb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1785&q=80") blueviolet; */
+    /* The color at the end is added to the part that is left without a background-image */
+    background: center/cover no-repeat url("https://plus.unsplash.com/premium_photo-1687428554388-395f7f690ddb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1785&q=80");
+    margin: 0 auto;
+}
+
+/* UNSPLASH - Website for free images */
+
+h1 {
+    font-size: 100px;
+    color: white;
+}
