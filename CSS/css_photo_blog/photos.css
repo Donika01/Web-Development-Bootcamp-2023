@@ -1,5 +1,8 @@
 /* The image shrinks down because we used percentage (If the body width changes, then the image width changes too) */
 
+/* EXTRA */
+/* We did not separate the images with a new line because it would add a space in between then, and it would mess up our calculations  */
+
 img {
     width: 30%;
     /* 10% left devided by 6 = 1.666%*/
