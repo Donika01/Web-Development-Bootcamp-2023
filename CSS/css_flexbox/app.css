@@ -24,40 +24,49 @@ h1 {
 /* justify-content is not horizontal or vertical, it can be either depending on flex-direction*/
 
 /* Flex-Wrap: nowrap (default) | wrap | wrap-reverse*/
+/* Flex-wrap is how we change the direction of the cross axis */
 
 /* Alighn-Items is going to distribute space or distribute items along the cross axis  */
-/* Justify-content is on the main axis, align items on the cross axis */
+/* baseline - drawing a line at the bottom of each letter  */
 
+/* Justify-content is on the main axis, align items on the cross axis */
 
 /* Align-content works only when we have flex-wrap. It is used wehen we have multiple rows (controlles the space between the rows) or columns*/
 /* Flex-start, flex-end, center, space-between, space-around etc. */
 
 /* Align-Self is used to align a single element (individual items) (not the entire container) */
 /* Align-items,self,content all have to do with the cross axis */
+
+/* Flex Sizing Properties has to do with individual items in a container and how they grow or shrink when there is available space or when there is too little space */
+/* Flex-Basis is just the initial size that an element should be added into our box as, it might be a width, it might be a height depending on the main axis direction. */
+
+/*  */
 #container {
     background-color: #003049;
     width: 90%;
-    height: 500px;
+    /* height: 500px; */
     margin: 0 auto;
     border: 5px solid #003049;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
-    /* Flex-wrap is how we change the direction of the cross axis */
     flex-wrap: wrap;
 }
 
 #container div {
     width: 200px;
     height: 200px;
+    /* Prevent them to be too small (min-width) or too big */
+    max-width: 300px;
     text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
 }
 
-div:nth-of-type(2) {
-    align-self: center;
+/* div:nth-of-type(1) {
+    flex-grow: 1;
 }
 
-div:nth-of-type(3) {
-    align-self: flex-end;
-}
+div:nth-of-type(5) {
+    flex-grow: 1;
+} */
