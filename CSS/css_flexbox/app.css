@@ -73,3 +73,33 @@ div:nth-of-type(5) {
     flex-grow: 2;
     flex-shrink: 0;
 }
+
+
+/* FLEX SHORTCUT */
+/* flex: flex-grow | flex-shrink | flex-basis - 3 values */
+/* flex: flex-grow | flex-shrink - 2 values */
+/* flex: flex-grow | flex basis (If the second one has a unit) - 2 values */
+/* flex: flex-grow - (If the value is unitless) 1 value */
+/* flex: flex-basis - (If the value has a unit) 1 value */
+
+h2 {
+    text-align: center;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+
+main .sidebar {
+    background-color: #6930c3;
+    flex: 1 2 300px;
+}
+
+main .maincontent {
+    background-color: #80ffdb;
+    flex: 2 1 800px;
+}
