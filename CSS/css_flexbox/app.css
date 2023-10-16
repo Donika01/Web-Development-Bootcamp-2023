@@ -25,6 +25,9 @@ h1 {
 
 /* Flex-Wrap: nowrap (default) | wrap | wrap-reverse*/
 
+/* Alighn-Items is going to distribute space or distribute items along the cross axis  */
+/* Justify-content is on the main axis, align items on the cross axis */
+
 #container {
     background-color: #003049;
     width: 90%;
@@ -37,12 +40,15 @@ h1 {
     justify-content: flex-start;
     flex-wrap: wrap; */
     flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap-reverse;
+    justify-content: center;
+    /* baseline - drawing a line at the bottom of each letter  */
+    align-items: baseline;
 }
 
 
 #container div {
     width: 200px;
     height: 200px;
+    text-align: center;
+    font-size: 4em;
 }
