@@ -28,6 +28,10 @@ h1 {
 /* Alighn-Items is going to distribute space or distribute items along the cross axis  */
 /* Justify-content is on the main axis, align items on the cross axis */
 
+
+/* Align-content works only when we have flex-wrap. It is used wehen we have multiple rows (controlles the space between the rows) or columns*/
+/* Flex-start, flex-end, center, space-between, space-around etc. */
+
 #container {
     background-color: #003049;
     width: 90%;
@@ -39,18 +43,19 @@ h1 {
     /* flex-direction: column;
     justify-content: flex-start;
     flex-wrap: wrap; */
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     /* baseline - drawing a line at the bottom of each letter  */
     /* align-items: baseline; */
-    align-items: flex-start;
+    align-items: flex-end;
     /* Flex-wrap is how we change the direction of the cross axis */
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 
 #container div {
-    width: 200px;
+    width: 400px;
     height: 200px;
     text-align: center;
     font-size: 4em;
