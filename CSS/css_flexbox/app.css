@@ -32,6 +32,8 @@ h1 {
 /* Align-content works only when we have flex-wrap. It is used wehen we have multiple rows (controlles the space between the rows) or columns*/
 /* Flex-start, flex-end, center, space-between, space-around etc. */
 
+/* Align-Self is used to align a single element (individual items) (not the entire container) */
+/* Align-items,self,content all have to do with the cross axis */
 #container {
     background-color: #003049;
     width: 90%;
@@ -39,24 +41,23 @@ h1 {
     margin: 0 auto;
     border: 5px solid #003049;
     display: flex;
-    /* The main axis is top to bottom, but our cross is left to right */
-    /* flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap; */
     flex-direction: row;
     justify-content: center;
-    /* baseline - drawing a line at the bottom of each letter  */
-    /* align-items: baseline; */
-    align-items: flex-end;
+    align-items: flex-start;
     /* Flex-wrap is how we change the direction of the cross axis */
     flex-wrap: wrap;
-    align-content: center;
 }
 
-
 #container div {
-    width: 400px;
+    width: 200px;
     height: 200px;
     text-align: center;
-    font-size: 4em;
+}
+
+div:nth-of-type(2) {
+    align-self: center;
+}
+
+div:nth-of-type(3) {
+    align-self: flex-end;
 }
