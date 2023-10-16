@@ -1,0 +1,86 @@
+/* Media Queries are the maon mechanism that we can use to make a responsive website (To restyle, move, show, hide things, change their sizes, go from a row to a column) etc.*/
+/* Toogle Device Toolbar on chrome inspect */
+/* All media queries begin with @media */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+
+nav {
+    font-size: 1.5em;
+}
+
+ul, li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+/* When the width is exactyle 800px (one exact breakpoint)*/
+/* @media (width: 800px) */
+
+/* Min-width - minimun width and up */
+/* @media (min-width: 600px) and (max-width: 800px) {
+    h1 {
+        color: purple;
+    }
+} */
+
+/* Everything up to 500 */
+/* The order that the code is writen matters - The larger screen size comems first */
+
+/* @media (max-width: 1500px) {
+    h1 {
+        color: yellow;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        color: orange;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        color: red;
+    }
+} */
+
+/* Different approach */
+
+h1 {
+    color: red;
+}
+
+@media (min-width: 500px) {
+    h1 {
+        color: orange;
+    }
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        color: yellow;
+    }
+}
+
+@media (min-width: 1500px) {
+    h1 {
+        color: green;
+    }
+}
+
+/* Media orientation */
+
+@media (orientation: landscape) {
+    body {
+        background-color: magenta;
+    }
+
+}
