@@ -40,7 +40,10 @@ h1 {
 /* Flex Sizing Properties has to do with individual items in a container and how they grow or shrink when there is available space or when there is too little space */
 /* Flex-Basis is just the initial size that an element should be added into our box as, it might be a width, it might be a height depending on the main axis direction. */
 
-/*  */
+/*  Flex-grow does not leave empty space, if there is space left, does not have units */
+
+/* Flex-shrink default value 1, it means that they will shrink at the same rate */
+
 #container {
     background-color: #003049;
     width: 90%;
@@ -50,23 +53,23 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 #container div {
     width: 200px;
     height: 200px;
     /* Prevent them to be too small (min-width) or too big */
-    max-width: 300px;
-    text-align: center;
-    flex-basis: 200px;
-    flex-grow: 1;
+    /* max-width: 300px; */
+    flex-basis: 600px;
 }
 
-/* div:nth-of-type(1) {
-    flex-grow: 1;
+div:nth-of-type(1) {
+    flex-shrink: 2;
+    /* 2 - How much it should shrink compared to the other elements */
 }
 
 div:nth-of-type(5) {
-    flex-grow: 1;
-} */
+    flex-grow: 2;
+    flex-shrink: 0;
+}
