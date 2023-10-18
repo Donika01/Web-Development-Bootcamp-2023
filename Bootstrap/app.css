@@ -5,3 +5,14 @@
 /* class container is a responsive, fixed-width container, meaning its max-width changes at each breakpoint */
 /* .container-fluid - The content goes on the whole page */
 /* Fore the Grid System we need to work within a container */
+
+/* Class="lead" */
+/* Class="display-1" */
+/* Class="blockquote" */
+/* Class="blockquote-footer" */
+/* Class="text-center" */
+/* Class="mb-0" - margin bottom = 0*/
+
+/* Utilities do not stend alone, they are not necessarily components. We add them onto something */
+/* Colore utilities and background color utilities */
+/* bg-succes, text-light etc */
