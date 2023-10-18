@@ -1,0 +1,7 @@
+/* BOOTSTRAP - The world's most popular CSS framework */
+/* It helps us quickly crate nice looking, responsive, modern websites so we do not have to write as much CSS as we might */
+/* Bootstrap consists a collection of components, different pieces that we can use and insert into our app and the Grid System (laying out our website) */
+
+/* class container is a responsive, fixed-width container, meaning its max-width changes at each breakpoint */
+/* .container-fluid - The content goes on the whole page */
+/* Fore the Grid System we need to work within a container */
