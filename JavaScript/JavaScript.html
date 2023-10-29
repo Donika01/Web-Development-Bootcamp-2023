@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Script</title>
 <script>
+    // Updating Variables
     //ctrl + L or clear() - Clear Console 
     let score = 0;
     score = score + 5;
@@ -18,6 +19,33 @@
     let numLives = 9;
     numLives --; //-1
     // ++
+
+    //  Increment Operator Explanation: i++ vs ++i
+    // i++ - Post-Increment (Postfix Increment operator)
+    // first returns the current value of the variable and then increments it by one 
+    // It returns the svalue prior to the increment
+    > let i = 0;
+    > i++;
+    < 0
+    > i;
+    < 1
+
+    > let i = 5;
+    > let result = i++;
+    > result;
+    < 5
+    > i; 
+    < 6
+
+    // ++i - Preincrement (Prefix increment operator)
+    // It increments the value by one first and then it returns the incremented value after that.
+    > let i = 0;
+    > ++i;
+    < 1;
+    > i;
+    < 1
+
+
 </script>
 </head>
 <body>
