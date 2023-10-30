@@ -204,6 +204,16 @@
         // .replaceAll is not fully impleneted these days (not recognised by most browsers)
         let lalala = "la".repeat(6);
 
+        // String Template Literals - SUPER USEFUL
+        let product = 'Artichoke';
+        let price = 2.25;
+        let qty = 5;
+        // Older Way
+        "You bought" + qty + " " + product + ". Total is: " + price * qty
+        // Newer Way -Templatte Literals ${} - whatever we put inside the crly braces will be treated as an expression and it will be evaluated
+        // We use back-ticks, not single quotes ``
+
+        let artichokes = `You bought ${qty} ${product.toUpperCase()}. Total is: $${price * qty}`
 
 
 
