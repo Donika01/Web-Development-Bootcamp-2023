@@ -219,10 +219,23 @@
         // Null - Must be assigned and it is INTENTIONAL absence of any value
         // Undefined - Variables that do not have an assigned value are undefined (We will see it frequently)
 
+        // RANDOM NUMBERS & THE MATH OBJECT
+        // Math Object contains properties and methods for mathematical constants and functions 
 
+        Math.PI;
+        Math.floor(23.999) // 23
+        Math.ceil(12.001)  // 24
+        Math.random() //decimal 0 - 0.9999999
 
+        Math.random() * 5  // 0 - 4.9999999
+        Math.floor(Math.random() * 10) + 1;  // 1 - 10
 
+        Math.pow(2, 3)
 
+        const die1 = Math.floor(Math.random() * 6) + 1; //random number from 1-6
+        const die2 = Math.floor(Math.random() * 6) + 1; //random number from 1-6
+
+        let roll = `roll: You rolled a ${die1} and a ${die2}. They sum to ${die1 + die2}`;
 
     </script>
 </head>
