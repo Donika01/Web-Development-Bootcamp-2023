@@ -48,18 +48,18 @@
         // let year = 2015;
         // Storing something under the name year and the value I want you to put in our jar is 3015, the number
 
-        
+
         let username = "Donika"
         // Updating Variables
         //ctrl + L or clear() - Clear Console 
         let score = 0;
         score = score + 5;
         score += 5;
-        
+
         let numLives = 9;
         numLives--; //-1
         // ++
-        
+
         //  Increment Operator Explanation: i++ vs ++i
         // i++ - Post-Increment (Postfix Increment operator)
         // first returns the current value of the variable and then increments it by one 
@@ -69,14 +69,14 @@
         // 0
         i;
         // 1
-        
+
         let a = 5;
         let result = a++;
         result;
         // 5
         a;
         // 6
-        
+
         // ++i - Preincrement (Prefix increment operator)
         // It increments the value by one first and then it returns the incremented value after that.
         let b = 0;
@@ -84,45 +84,45 @@
         //   1;
         b;
         // 1
-        
+
         // Let Const and Var are three keywords to make variables
         // Let allows us to make a variable that we can reassign
         // Const - Constante. Will not change or update it's value
-        
+
         let lalala = 12;
         // undefined
         const luckyNum = 12;
-        luckyNum += 1;
+        // luckyNum += 1;
         // Error
         const feetInMiles = 5280;
-        
+
         // Var - The old variable keyword
         // Similar to let 
         var runDistance = 26.2;
         runDistance;
         // 26.2
-        
+
         //Booleans - Another primitive type. Are used to store yes or no values (true or flase)
         let isActiveGame = true;
         let isLoggedIn = false;
         let isGameOver = false;
-        
+
         // Variables can change types
         // TypeScript - A strongly typed programming language that builds on JavaScript
         // TypeScript specifies the type of the variable
-        
+
         isLoggedIn;
         // false
         isLoggedIn = 555;
         isLoggedIn
         // 555
-        
+
         //  Variable Naming and Conventions
         // Hard Rules
         // 1.No spaces
         // 2.Can not start with numbers
         // 3. In JavaScript identifiers are case-sensitive and can contain unicode letters, $, _, and digits (0 - 9)
-        
+
         // Best Practices
         // 1.Give your variables names that are camel cased (newWord) 
         // Snake_Case
@@ -130,16 +130,56 @@
         // 2.The importance of giving variables good names
         // 3.isLoggedIn - is, the fist word, so we know we hava a boolean variable
         // 4.Avoid one letter variables 
-        
-        
+
+
         // Strings - Strings of Characters and they represent textual information
         // String must be wrapped in quotes. This is how we indicate to JavaScript that we are working with a string
         // Single quotes or Double quotes, but be consistent
-        </script>
+        let quote = 'You had me at "Hello"';
+
+        // Indices & Length
+        // Strings are indexed - Each character has a corresponding index (a positional number)
+
+        let animal = "Dumbo Octopus";
+        animal[0]; //Accesing the 0 index (D)
+        animal[99];
+        // < Undefined
+        let phone = "(231)456-7897"
+        phone[0];
+        // Every string has a built in magical property - length
+        animal.length;
+        // < 13
+
+        // Concatination
+        "lol" + "lol"
+        // < "lollol"
+        let firstName = "Donika";
+        let lastName = "Mjeku";
+        let fullName = firstName + " " + lastName;
+
+        // If we concatinate JavaScript is going to coerce these to a common type (strings)
+        let concatinate = 1 + 'hi';
+        typeof concatinate;
+        // < string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
 </head>
 
 <body>
-    
+
 </body>
 
 </html>
