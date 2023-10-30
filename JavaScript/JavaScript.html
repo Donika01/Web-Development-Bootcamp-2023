@@ -162,11 +162,29 @@
         typeof concatinate;
         // < string
 
+        // String Methods
+        // Every sting that we make in JavaScript comes with a set of built-in-actions that we call Methods
+        // Methods do a whole range of things
+        // Chnge the casing (lowercase, uppercase or capitalize something),
+        // Replace portion of a string
+        // Search for somethign within a string
+        // Duplicate a string and repeat it
+        // Combine strings
+        // Styntax thing.method()
+        // .length is a propety, when it includes () it is a method
+        // Using a method causes something to happen to an object, while using a propery returns information about object or causes a quality obout the object to change
 
+        let msg = 'leave me alone right now i hate you'
+        msg.toUpperCase // It only tells us that there is a method called toUpperCase 
+        msg.toUpperCase();
+        let angryMsg = msg.toUpperCase();
 
-
-
-
+        // .trim() - trims off any white space at the begining or the end of a string, but not in the middle
+        let userInput = "     hello, what are you doing?    ";
+        userInput.trim();
+        // < "hello, what are you doing?"
+        // We can chain methods together
+        userInput.trim().toUpperCase();
 
 
 
