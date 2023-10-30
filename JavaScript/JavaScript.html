@@ -89,7 +89,7 @@
         // Let allows us to make a variable that we can reassign
         // Const - Constante. Will not change or update it's value
 
-        let lalala = 12;
+        let luckyyNum = 12;
         // undefined
         const luckyNum = 12;
         // luckyNum += 1;
@@ -132,12 +132,12 @@
         // 4.Avoid one letter variables 
 
 
-        // Strings - Strings of Characters and they represent textual information
+        // STRINGS - Strings of Characters and they represent textual information
         // String must be wrapped in quotes. This is how we indicate to JavaScript that we are working with a string
         // Single quotes or Double quotes, but be consistent
         let quote = 'You had me at "Hello"';
 
-        // Indices & Length
+        // INDICES & LENGTH
         // Strings are indexed - Each character has a corresponding index (a positional number)
 
         let animal = "Dumbo Octopus";
@@ -162,7 +162,7 @@
         typeof concatinate;
         // < string
 
-        // String Methods
+        // STRING METHODS
         // Every sting that we make in JavaScript comes with a set of built-in-actions that we call Methods
         // Methods do a whole range of things
         // Chnge the casing (lowercase, uppercase or capitalize something),
@@ -185,6 +185,24 @@
         // < "hello, what are you doing?"
         // We can chain methods together
         userInput.trim().toUpperCase();
+
+        // STRING METHODS WITH ARGUMENTS
+        // Arguments are just inputs that we pass into the methods to alter how they behave
+        // indexOf(arg) tells us what index does ir start
+        let tvShow = "Gossip Girl";
+        tvShow.indexOf('Gossip');
+        //< 0
+        tvShow.indexOf("Friends")
+        // < -1 (Meaning it is not found)
+        // .slice() accepts more than one argument - extracts a portion of a string
+        tvShow.slice(7)
+        // < Girl
+        tvShow.slice(0, 6) //begin index, end index (the index before which the extraction will end)
+        // < Gossip
+        //.replace("whatwewanttoreplace, "withwhatwewanttoreplace")
+        tvShow.replace('Girl', 'Boy')  //It replaces only the first maching instance
+        // .replaceAll is not fully impleneted these days (not recognised by most browsers)
+        let lalala = "la".repeat(6);
 
 
 
