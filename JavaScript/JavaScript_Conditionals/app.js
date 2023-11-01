@@ -37,6 +37,22 @@ if (age < 5) {
     console.log("You are a child. You pay $10")
 } else if (age < 65) {
     console.log("You are an adult. You pay $20")
-} else if (age > 65) {
+} else {
     console.log("You are a senior. You pay $10")
+}
+
+// Else
+// If nothing else was true, do this
+
+
+const ditaJaves = prompt('Enter a day').toLowerCase();
+
+if (ditaJaves === 'monday') {
+    console.log('UGHH I HATE MONDAYS')
+} else if (ditaJaves === 'saturday') {
+    console.log("YAY I LOVE SATURDAYS")
+} else if (ditaJaves === 'friday') {
+    console.log('FRIDAYS ARE DECENT. ESPECIALLY AFTER WORK')
+} else {
+    console.log('MEH')
 }
