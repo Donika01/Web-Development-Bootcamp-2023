@@ -34,6 +34,14 @@ barbell.push(10);
 
 barbell.pop();
 
+// Shift and Unshift - Remove or add from/to start
+// First In First Out (FIFO)
+
+let nextPerson = movieLine.shift();
+movieLine.push('Bleroni', 'Elona', 'Aulona');
+
+movieLine.unshift('Daki');
+
 
 
 
