@@ -18,14 +18,28 @@
 
 // The AND Operator runs before the OR Operator (Optionla to use ())
 
-const age = prompt("Enter age");
+// const age = prompt("Enter age");
 
-if (age >= 0 && age < 5 || age >= 65) {
-    console.log("FREE")
-} else if (age >= 5 && age < 10) {
-    console.log("$10")
-} else if (age >= 10 && age < 65) {
-    console.log("$20")
-} else {
-    console.log("INVALID AGE")
+// if (age >= 0 && age < 5 || age >= 65) {
+//     console.log("FREE")
+// } else if (age >= 5 && age < 10) {
+//     console.log("$10")
+// } else if (age >= 10 && age < 65) {
+//     console.log("$20")
+// } else {
+//     console.log("INVALID AGE")
+// }
+
+// Locical NOT
+// !expression returns true if expression is false
+
+let firstName = prompt("Enter yout first name");
+if (!firstName) {
+    firstName = prompt("TRY AGAIN!!!")
+}
+
+const age = 24;
+
+if (!(age >= 0 && age < 5 || age >= 65)) {
+    console.log("YOU ARE NOT A BABY OR A SENIOR")
 }
