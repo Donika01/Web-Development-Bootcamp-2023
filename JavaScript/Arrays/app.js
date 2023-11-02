@@ -58,6 +58,29 @@ comboParty.indexOf('reksi') // < -1
 // It changes permanently the array even without saving it as a variable
 comboParty.reverse();
 
+// Slice is a getting a  copy of a portion of an array
+
+let ngjyrat = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+
+let coolColors = ngjyrat.slice(3); // From index 3 to the end
+let warmColors = ngjyrat.slice(0, 3); // without including the element with the index 3 (green)
+
+ngjyrat.slice(-3); // Last three colors
+
+// Splice - Destructive to the original array
+// Starting point(index), how many we want to delete, what we want to insert
+
+ngjyrat.splice(5, 1); // Indigo deleted
+
+ngjyrat.splice(1, 0, 'red-orange');
+
+ngjyrat.splice(4, 0, 'yellow-green', 'forest-green')
+
+
+
+
+
+
 
 
 
