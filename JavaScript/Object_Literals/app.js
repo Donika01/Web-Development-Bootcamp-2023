@@ -50,3 +50,22 @@ midterms['danielle'] = 'A';
 midterms.ezra = 'B+';
 midterms['antonio'] = 'A-';
 
+// Nesting Arrays & Objects
+// The combination of arrays and objects is far more powerful than either one on their own
+// Most of out dta in real life is a mixture of key-value stuff and ordered list of information
+
+const comments = [
+    {
+        username: 'Tammy',
+        text: 'lololol',
+        votes: 9
+    },
+    {
+        username: 'Koni',
+        text: 'Heke doooolë',
+        votes: 555534
+    }
+]
+
+comments[1].text // < Heke doooolë
+
