@@ -97,7 +97,14 @@ numrat.push(4);
 // const primitive - you cannot change it
 // const array - you can alter it, but not reassign 
 
- 
+// Nested Arrays - We can store arrays inside other arrays
+
+const gameBoard = [['X', 'O', 'X'], ['O', null, 'X'], ['O', 'O', 'X']]
+
+gameBoard[1][2] // X - second array, third element
+
+
+
 
 
 
