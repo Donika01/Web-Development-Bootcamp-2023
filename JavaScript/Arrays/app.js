@@ -42,6 +42,24 @@ movieLine.push('Bleroni', 'Elona', 'Aulona');
 
 movieLine.unshift('Daki');
 
+// Other Array Methods
+// Concat, indexOf, includes & reverse
+
+let cats = ['blue', 'kitty'];
+let dogs = ['rusty', 'wyatt']
+
+let comboParty = cats.concat(dogs);
+
+cats.includes('blue'); // < true (boolean value)
+
+comboParty.indexOf('rusty') // < 0
+comboParty.indexOf('reksi') // < -1
+
+// It changes permanently the array even without saving it as a variable
+comboParty.reverse();
+
+
+
 
 
 
