@@ -3,13 +3,13 @@
 // Falsy values: false, 0, "", null, undefined, NaN
 // Truthy values: Everything else
 
-// const userInput = prompt("Enter something");
+const userInput = prompt("Enter something");
 
-// if (userInput) {
-//     console.log("TRUTHY!")
-// } else {
-//     console.log("FALSY!")
-// }
+if (userInput) {
+    console.log("TRUTHY!")
+} else {
+    console.log("FALSY!")
+}
 
 if (0) {
     console.log("TRUTHY!")
