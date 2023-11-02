@@ -81,8 +81,23 @@ ngjyrat.splice(4, 0, 'yellow-green', 'forest-green')
 let nums = [1, 2, 3];
 let numsCopy = nums;
 
-nums === numsCopy; // < true compares the reference (are they pointing to the same thing in memory)
+nums === numsCopy; // < true compares the reference (sort of an address) (are they pointing to the same thing in memory)
 // It does not help us to compare the content 
+
+// Arrays + Const
+// We can still use const for arrays becasue we can still change the content of our array
+// Const cares that the variable itself is not reassigned
+
+const numrat = [1, 2, 3] // Changing the content does not impacts the address of the array 
+// If the shell remains the same, the content can change
+numrat.push(4);
+
+// numrat = [1, 2, 3, 4]; Error
+
+// const primitive - you cannot change it
+// const array - you can alter it, but not reassign 
+
+ 
 
 
 
