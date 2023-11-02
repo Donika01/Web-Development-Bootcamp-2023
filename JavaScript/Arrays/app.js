@@ -76,8 +76,13 @@ ngjyrat.splice(1, 0, 'red-orange');
 
 ngjyrat.splice(4, 0, 'yellow-green', 'forest-green')
 
+// Reference Types & Equality Testing
 
+let nums = [1, 2, 3];
+let numsCopy = nums;
 
+nums === numsCopy; // < true compares the reference (are they pointing to the same thing in memory)
+// It does not help us to compare the content 
 
 
 
