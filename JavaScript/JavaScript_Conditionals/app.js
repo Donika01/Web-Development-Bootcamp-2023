@@ -56,3 +56,38 @@ if (ditaJaves === 'monday') {
 } else {
     console.log('MEH')
 }
+
+// Nesting Conditionals
+
+// Password must be 6+ characters
+// Password cannot include space
+
+const password = prompt("Please enter a new password");
+
+if (password.length >= 6) {
+    if (password.indexOf(' ') === -1) {
+        console.log("VALID PASSWORD")
+    } else {
+        console.log("Password cannot contain spaces")
+    }
+} else {
+    console.log("Password too short! Must be 6+ characters")
+}
+
+// Change the value of num, so that "YOU GOT ME!" prints out
+const num = 102; // THIS IS THE ONLY LINE YOU SHOULD CHANGE :) 
+
+// DO NOT TOUCH ANYTHING BELOW (please) 
+if (num <= 100) {
+    if (num >= 50) {
+        console.log("HEY!");
+    }
+} else {
+    if (num < 103) {
+        if (num % 2 === 0) {
+            console.log("YOU GOT ME!");
+        }
+    }
+}
+
+
