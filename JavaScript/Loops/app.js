@@ -28,3 +28,8 @@ for (let i = 10; i <= 1000; i *= 10) {
     console.log(i)
 }
 
+
+// INFINITE LOOPS
+// for (let i = 20; i >= 0; i ++) {
+    // console.log(i)
+// }
