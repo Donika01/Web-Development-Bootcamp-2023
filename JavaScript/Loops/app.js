@@ -289,7 +289,34 @@ for (let i = animals.length - 1; i >= 0; i--) {
 
 const people = ["Scooby", "Velma", "Daphne", "Shaggy", "Fred"]; //DONT TOUCH THIS LINE!
 
-// WRITE YOUR LOOP BELOW THIS LINE:
+// // WRITE YOUR LOOP BELOW THIS LINE:
 for (let i = 0; i < people.length; i++) {
     console.log(people[i].toUpperCase())
+}
+
+// Nested Loops
+
+for (let i = 0; i <= 10; i++) {
+    console.log(`i is: ${i}`)
+    for (let j = 1; j < 4; j++) {
+        console.log(`j     is: ${j}`)
+    }
+}
+
+// One common area where nested loops come up is when we need to traverse or iterate across nested arrays
+
+const seatingChart = [
+    ['Kristen', 'Erik', 'Namita'],
+    ['Geoffry', 'Juanita', 'Antonio', 'Kevin'],
+    ['Yuma', 'Sakura', 'Jack', 'Erika']
+]
+
+console.log("BREAK!");
+
+for (let i = 0; i < seatingChart.length; i ++) {
+    const row = seatingChart[i]
+    console.log(`ROW #${i + 1}`)
+    for (let j = 0; j < row.length; j++) {
+        console.log(row[j])
+    }
 }
