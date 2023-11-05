@@ -9,8 +9,10 @@ while (command !== 'quit') {
         console.log(`${addItem} added to the list`);
         toDoList.push(addItem);
     } else if (command === 'list') {
+        console.log('*****************');
         for (let listElement in toDoList)
             console.log(`${listElement}: ${toDoList[listElement]}`);
+        console.log('*****************');
     } else if (command === 'delete') {
         if (toDoList.length === 0) {
             console.log("List is empty")
@@ -25,7 +27,6 @@ while (command !== 'quit') {
 
         }
     }
-    console.log("*********")
 }
 
 console.log("You quit!")
