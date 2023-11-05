@@ -27,15 +27,71 @@ function greet(firstName) {
 
 greet('Donika');
 
+// Coding Exercise 36
+
 // function rant(message) {
 //     console.log(message.toUpperCase());
 //     console.log(message.toUpperCase());
 //     console.log(message.toUpperCase());
 //   }
-  
-  // Solution with a for loop:
-  function rant(message) {
+
+// Solution with a for loop:
+function rant(message) {
     for (let i = 0; i < 3; i++) {
-      console.log(message.toUpperCase());
+        console.log(message.toUpperCase());
     }
-  }
+}
+
+//   Multiple Arguments 
+
+function greeting(firstName, lastName) {
+    console.log(`Hey there, ${firstName} ${lastName[0]}.`);
+}
+
+greeting('Blair', 'Waldorf');
+
+function repeat(str, numTimes) {
+    let result = '';
+    for (let i = 0; i < numTimes; i++) {
+        result += str;
+    }
+    console.log(result);
+}
+
+repeat('Lauresa', 4);
+
+// Coding Exercise 37
+
+function isSnakeEyes (roll1, roll2) {
+    if (roll1 === 1 && roll2 === 1) {
+        console.log("Snake Eyes!")
+    } else {
+        console.log("Not Snake Eyes!")
+    }
+}
+
+isSnakeEyes(1,1);
+isSnakeEyes(1,2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
