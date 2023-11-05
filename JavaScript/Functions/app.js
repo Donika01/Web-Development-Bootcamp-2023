@@ -17,3 +17,25 @@ singSong();
 singSong();
 singSong();
 singSong();
+
+// Arguments - Inputs to a function
+// Parameter when we declare the function, argument when we run it 
+
+function greet(firstName) {
+    console.log(`Hey there ${firstName}!`);
+}
+
+greet('Donika');
+
+// function rant(message) {
+//     console.log(message.toUpperCase());
+//     console.log(message.toUpperCase());
+//     console.log(message.toUpperCase());
+//   }
+  
+  // Solution with a for loop:
+  function rant(message) {
+    for (let i = 0; i < 3; i++) {
+      console.log(message.toUpperCase());
+    }
+  }
