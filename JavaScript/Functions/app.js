@@ -82,7 +82,7 @@ isSnakeEyes(1, 2);
 // function add(x, y) {
 //     const sum = x + y;
 //     return sum;
-    // Code after return does not get executed
+// Code after return does not get executed
 // }
 
 // const seven = add(3, 4);
@@ -98,6 +98,72 @@ function add(x, y) {
     return x + y;
 }
 
+// Coding Exercise 38
+function multiply(x, y) {
+    return x * y;
+}
+
+// Coding Exercise 39 
+function isShortsWeather(temperature) {
+    if (temperature >= 75) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// Using the JavaScript ternary operator syntax
+// function isShortsWeather(temperature) {
+//     return temperature >= 75 ? true : false;
+//   }
+
+// Coding Exercise 40
+function lastElement(arr) {
+    if (arr.length === 0) {
+        return null;
+    } else {
+        return arr[arr.length - 1];
+    }
+}
+
+function lastElement(arr) {
+    return arr.length > 0 ? arr[arr.length - 1] : null;
+}
+
+
+//   Coding Exercise 41
+function capitalize(cap) {
+    let fisrtLetter = cap[0].toUpperCase();
+    return fisrtLetter + cap.slice(1);
+
+}
+
+// Coding Exercise 42
+function sumArray(array) {
+    let total = 0;
+    for (let i = 0; i < array.length; i++) {
+        total += array[i];
+    }
+    return total;
+}
+
+function sumArray(nums) {
+    let total = 0;
+    for (let num of nums) {
+        total += num;
+    }
+    return total;
+}
+
+// Coding Exercise 43
+function returnDay(num) {
+    const day = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    if (num <= 7 && num > 0) {
+        return day[num - 1];
+    } else {
+        return null;
+    }
+}
 
 
 
