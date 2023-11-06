@@ -62,7 +62,7 @@ repeat('Lauresa', 4);
 
 // Coding Exercise 37
 
-function isSnakeEyes (roll1, roll2) {
+function isSnakeEyes(roll1, roll2) {
     if (roll1 === 1 && roll2 === 1) {
         console.log("Snake Eyes!")
     } else {
@@ -70,8 +70,34 @@ function isSnakeEyes (roll1, roll2) {
     }
 }
 
-isSnakeEyes(1,1);
-isSnakeEyes(1,2);
+isSnakeEyes(1, 1);
+isSnakeEyes(1, 2);
+
+// The Return Keyword is how we get values out of a function so we can save and capture them
+
+// function add(x, y) {
+//     console.log(x = y);
+// }
+
+// function add(x, y) {
+//     const sum = x + y;
+//     return sum;
+    // Code after return does not get executed
+// }
+
+// const seven = add(3, 4);
+
+// add(add(2, 1), 9); // < 12
+
+// We can only return a single value
+
+function add(x, y) {
+    if (typeof x !== 'number' || typeof y !== 'number') {
+        return false
+    }
+    return x + y;
+}
+
 
 
 
